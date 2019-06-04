@@ -12,141 +12,118 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/yanzheng.js"></script>
-    <style>
-        /* 去除最外层父元素的*/
-        .container{margin:0;
-                   padding:0
-        }
-        /*遮罩层、用户模块进行定位，实现堆叠*/
-        .zhezhao,.user{position:absolute;}
-        .zhezhao{z-index: 5}
-        .user{
-            z-index: 7;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /*遮罩层的样式*/
-        .zhezhao{
-            width:100vw;
-            height:100vh;
-            background:rgba(162, 152, 152, 0.25)
-        }
-        /*视频的样式*/
-        video{width:100%;
-            height:100%;
-            box-sizing:border-box;
-            position: fixed;
-            top:0px;
-            left:0px;
-            z-index: -9999;
-            object-fit: fill
-        }
-        /*用户信息*/
-       input{ display: block;
-              border: none;
-              box-sizing: border-box;
-              padding: 0 2vw;
-              height: 10vh;
-              width: 28vw;
-              color: #fff;
-              line-height: 10vh;
-              font-size: 28px;
-              -webkit-box-flex: 1;
-              -ms-flex: 1;
-              flex: 1;
-              border-radius:66px;
-              background: hsla(0,0%,100%,.4);
-              margin:4vh 0vw 0vh 0vw;
-              outline: none;
-       }
-        /*提交按钮*/
-        .btn{
-            background-color: #fff;
-            height: 10vh;
-            width: 28vw;
-            color: #ea4141;
-            font-size: 28px;
-            text-align: center;
-            line-height: 10vh;
-            margin-top: 4vh;
-            border-radius: 66px;
-        }
-        .font{
-            color: #fff;
-            font-size: 28px;
-            margin-top:4vh;
-            display: flex;
-            justify-content: space-between;
-        }
-        .eye{
-            position:absolute;
-            top:47vh;
-            right:38vw;
-        }
-        /*提示内容*/
-        #jingshi{
-            width: 14vw;
-            height: 13vh;
-            border:.1rem solid rgba(0,0,0,0.3);
-            position: absolute;
-            top: 40vh;
-            left: 43vw;
-            background:rgba(0,0,0,0.3);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-        }
-        #jingshi>div{
-            width:13vw;
-            height:11vh;
-            background:rgba(0,0,0,0.7);
-            color:#ffffff;
-            text-align: center;
-            line-height:11vh;
-            font-size: 25px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <div class="container">
-    <div>
+    <!-- 存在问题：有先后问题 -->
         <!-- 首页视频-->
         <video src="video/index.mp4" loop autoplay muted></video>
         <!-- 中间遮罩层-->
         <div class="zhezhao"></div>
-        <!-- 用户的登录和注册-->
+        <!-- 用户-->
         <div class="user">
-            <div>
-                <div>tubiao</div>
-                <div>
-                    <input type="text" placeholder="手机号码" id="phone"/>
-                </div>
-
-                <div>
-                    <input type="text" placeholder="密码" id="upwd"/>
-                </div>
-                <div>
-                    <button class="btn" onclick="javascript:yanzheng();">登陆</button>
-                </div>
-                <div class="font">
-                    <span>忘记密码?</span>
-                    <span>新用户注册</span>
-                </div>
-                <img src="./img/eye.png" alt="" class="eye"/>
-                <div id="jingshi">
+            <div class="show"    style="opacity: 0;">
+                <!-- 登录 ，正常-->
+                <div class="login">
+                    <div>tubiao</div>
                     <div>
-                        <span>请输入手机号</span>
+                        <input type="text" placeholder="手机号码" class="phone"/>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="密码" class="upwd"/>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="javascript:login();">登录</button>
+                    </div>
+                    <div class="font">
+                        <span onclick="javascript:forget()">忘记密码?</span>
+                        <span onclick="javascript:reg()">新用户注册</span>
+                    </div>
+                    <img src="./img/eye.png" alt="" class="eye"/>
+                </div>
+                <!-- 注册,还差短信验证-->
+                <div class="reg">
+                    <div>tubiao</div>
+                        <div>
+                            <input type="text" placeholder="手机号码" class="phone"/>
+                            <div class="cut"></div>
+                            <div class="mes1">获取短信验证码</div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="验证码" id="reg"/>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="密码" class="upwd">
+                        </div>
+                        <div>
+                            <button class="btn" onclick="javascript:reg_reg();">注册</button>
+                        </div>
+                        <div class="font">
+                            <span>已经同意《用户协议》</span>
+                            <span onclick="javascript:newLogin()">去登陆</span>
+                        </div>
+                        <img src="./img/eye.png" alt="" class="eye2"/>
+                </div>
+                <!-- 忘记密码 -->
+                <div class="forget">
+                    <h3>重置密码</h3>
+                    <div>
+                        <input type="text" placeholder="请输入注册过的手机号码" class="phone"/>
+                        <div class="mes2">获取短信验证码</div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="验证码" id="reg2"/>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="新密码" class="upwd">
+                    </div>
+                    <div>
+                        <button class="btn" onclick="javascript:ok();">完成</button>
+                    </div>
+                    <img src="./img/eye.png" alt="" class="eye3"/>
+                </div>
+                <!-- 验证信息提示框-->
+                <div id="jingshi">
+                        <div id="tishi"></div>
+                </div>
+            </div>
+            <!-- 选择 -->
+            <div class="choose">
+                <div>
+                    <div class="c_title">
+                        您的选择
+                    </div>
+                    <div class="c_choose"> 
+                        <div>
+                            <div>我和我们</div>
+                            <div>最美风景</div>
+                            <div>想和</div>
+                            <div>家人，朋友</div>
+                            <div>一同欣赏</div> 
+                            <a href="g_index.html" class="btn1">我选择</a>
+                        </div>
+                        <div>
+                            <div>二人世界</div>
+                            <div>最美风景</div>
+                            <div>想和</div>
+                            <div>我的那个他</div>
+                            <div>一同欣赏</div>
+                            <a href="w_index.html" class="btn2">我选择</a>
+                         </div>
+                         <div>
+                             <div>独享</div>
+                             <div>不负好时光</div>
+                             <div>想来一场</div>
+                             <div>说走</div>
+                             <div>就走的</div>
+                             <div>旅行</div>
+                             <a href="g_index.html" class="btn3">我选择</a>
+                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </div>
 </body>
 </html>

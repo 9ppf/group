@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!--导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!--这三个js文件有顺序要求-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/g_index.css">
+</head>
+<body>
+<div class="container-fluid p-0">
+    <div id="header"></div>
+    <!-- 轮播图-->
+    <div id="demo" class="carousel" data-ride="carousel">
+        <!--1.轮播图片 -->
+        <div class="carousel-inner bh">
+            <div class="carousel-item active">
+                <a href=""><img class="w-100" src="./img/g_banner1.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img class="w-100" src="./img/g_banner2.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img class="w-100" src="./img/g_banner3.jpg" alt=""/></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img class="w-100" src="./img/g_banner4.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!--2.左右箭头 -->
+        <a data-slide="next" href="#demo" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a data-slide="prev" href="#demo" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <!--3.轮播指示符 -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+    </div>
+    <!-- 楼层过渡-->
+    <div class="text-center p-4">
+        <img src="./img/g_tran1.png" alt=""/>
+    </div>
+    <!-- 一楼四张大图-->
+    <div class="floor d-flex align-middle">
+        <div class="first">
+            <a href="#"><img src="./img/g_pic1.jpg" alt=""/></a>
+            <a href="#"><img src="./img/g_pic2.jpg" alt=""/></a>
+        </div>
+        <div class="first">
+            <a href="#"><img src="./img/g_pic3.jpg" alt=""/></a>
+            <a href="#"><img src="./img/g_pic4.jpg" alt=""/></a>
+        </div>
+    </div>
+    <!-- 楼层过渡-->
+    <div class="text-center p-4">
+        <img src="./img/g_tran1.png" alt=""/>
+    </div>
+    <div class="text-center p-3 bg">
+        <img src="./img/g_tran2.png" alt=""/>
+    </div>
+    <div class="text-center p-4">
+        <img src="./img/g_tran3.png" alt=""/>
+    </div>
+    <!-- 二楼八张小图-->
+    <div class="floor">
+        <a href="#"><img src="./img/g_pic5.jpg" alt=""/></a>
+        <a href="#"><img src="./img/g_pic6.jpg" alt=""/></a>
+        <a href="#"><img src="./img/g_pic7.jpg" alt=""/></a>
+        <a href="#"><img src="./img/g_pic8.jpg" alt=""/></a>
+        <a href="#"><img src="./img/g_pic9.jpg" alt=""/></a>
+        <a href="#"><img src="./img/g_pic10.jpg" alt=""/></a>
+        <a href="#"><img src="./img/g_pic11.jpg" alt=""/></a>
+        <a href="#"><img src="./img/g_pic12.jpg" alt=""/></a>
+    </div>
+    <!-- 楼层过渡-->
+    <div class="text-center p-4">
+        <img src="./img/g_tran1.png" alt=""/>
+    </div>
+    <div class="second" align="center">
+        <span>DEMO FILM</span>
+        <span>拍摄影像</span>
+    </div>
+    <div class="text-center p-4">
+        <img src="./img/g_tran4.png" alt=""/>
+    </div>
+    <!-- 三楼视频-->
+    <div id="video-player" class="video-play">
+        <video src="./video/g_vid1.mp4" style="background:url(img/g_video.jpg) no-repeat center"></video>
+        <img class="big-post-icon" src="./img/g_big-v.png" style="display: block;">
+    </div>
+    <div id="footer"></div>
+</div>
+<script>
+        $(function() {
+              $('#header').load('header.html');
+              $('#footer').load('footer.html');
+          })
+      </script>
+</body>
+</html>

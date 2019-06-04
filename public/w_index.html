@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!--导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!--这三个js文件有顺序要求-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/w_index.css">
+</head>
+<body>
+<div class="container-fluid p-0">
+    <!-- 头部导航栏 -->
+    <div id="header"></div>
+    <!-- 中间主体 -->
+    <div id="main_body">
+        <!-- 轮播图-->
+        <div id="demo" class="carousel" data-ride="carousel">
+            <!--1.轮播图片 -->
+            <div class="carousel-inner bh">
+                <div class="carousel-item active">
+                    <a href=""><img class="w-100" src="./img/w_banner2.jpg" alt=""/></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="w-100" src="./img/w_banner3.jpg" alt=""/></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="w-100" src="./img/w_banner4.jpg" alt=""/></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="w-100" src="./img/w_banner5.jpg" alt=""/></a>
+                </div>
+            </div>
+            <!--2.左右箭头 -->
+            <a data-slide="next" href="#demo" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a data-slide="prev" href="#demo" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!--3.轮播指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+        </div>
+        <!-- 楼层过渡-->
+        <div class="text-center p-4">
+            <img src="./img/g_tran1.png" alt=""/>
+        </div>
+        <!-- 一楼四张大图-->
+        <div class="floor d-flex align-middle">
+            <div class="first">
+                <a href="#"><img src="./img/w_big12.jpg" alt=""/></a>
+                <a href="#"><img src="./img/w_big11.jpg" alt=""/></a>
+            </div>
+            <div class="first">
+                <a href="#"><img src="./img/w_big10.jpg" alt=""/></a>
+                <a href="#"><img src="./img/w_big9.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!-- 楼层过渡-->
+        <div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran1.png" alt=""/>
+            </div>
+            <div class="text-center p-3 bg">
+                <img src="./img/g_tran2.png" alt=""/>
+            </div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran3.png" alt=""/>
+            </div>
+        </div>
+        <!-- 二楼八张小图-->
+        <div class="floor">
+            <a href="#"><img src="./img/w_center2.jpg" alt=""/></a>
+            <a href="#"><img src="./img/w_center3.jpg" alt=""/></a>
+            <a href="#"><img src="./img/w_center4.jpg" alt=""/></a>
+            <a href="#"><img src="./img/w_center5.jpg" alt=""/></a>
+            <a href="#"><img src="./img/w_center6.jpg" alt=""/></a>
+            <a href="#"><img src="./img/w_center7.jpg" alt=""/></a>
+            <a href="#"><img src="./img/w_center8.jpg" alt=""/></a>
+            <a href="#"><img src="./img/w_center9.jpg" alt=""/></a>
+        </div>
+        <!-- 楼层过渡-->
+        <div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran1.png" alt=""/>
+            </div>
+            <div class="second" align="center">
+                <span>DEMO FILM</span>
+                <span>拍摄影像</span>
+            </div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran4.png" alt=""/>
+            </div>
+        </div>
+        <!-- 三楼视频-->
+        <div id="video-player" class="video-play">
+           
+        </div>
+        <!-- 用户承诺 -->
+        <div class="promise">
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        </div>
+        <!-- 地图 -->
+        <div id="map">
+            <img src="img/map-blue.gif" alt="">
+            <div id="city">
+                <div class="london">
+                    <div>伦敦</div>
+                    <img src="img/map_london.jpg" alt="">
+                </div>
+                <div class="Paris">
+                    <div>            
+                        <div> 巴黎  </div>
+                        <img src="img/map_Paris.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Venice">
+                    <div>
+                        <div> 威尼斯</div>
+                        <img src="img/map_Venice.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Prague">
+                    <div>
+                        <div>布拉格</div>
+                        <img src="img/map_Bragg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Rome">
+                    <div>
+                        <div>罗马</div>
+                        <img src="img/map_Roman.jpg" alt="">
+                    </div>       
+                </div>
+                <div class="Santorini ">
+                    <div>
+                         <div>圣托里尼</div>
+                         <img src="img/map_Santorini.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="Maldives">
+                    <div>
+                        <div>马尔代夫</div>
+                        <img src="img/map_Maldives.jpg" alt="">
+                    </div>
+                </div>
+                <div class="HKT">
+                     <div>
+                        <div>普吉岛</div>
+                        <img src="img/map_HKT.jpg" alt="">
+                    </div>                   
+                 </div>
+                <div class="KUL">
+                    <div>
+                        <div>吉隆坡</div>
+                        <img src="img/map_KUL.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Bail">
+                    <div>
+                        <div>峇里岛</div>
+                        <img src="img/map_Bei.jpg" alt="">
+                    </div>
+                </div>
+                <div class="snow">
+                    <div>
+                        <div>雪梨</div>
+                        <img src="img/map_snow.jpg" alt="">
+                    </div>
+                </div>
+                <div class="kili">
+                    <div>
+                        <div>纽西兰</div>
+                        <img src="img/map_Kili.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Dali">
+                    <div>
+                        <div>大理</div>
+                        <img src="img/map_Dali.jpg" alt="">
+                    </div>
+                </div>
+                <div class="LJG">
+                    <div>
+                        <div>丽江</div>
+                        <img src="img/map_LJG.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Sanya">
+                    <div>
+                        <div>三亚</div>
+                        <img src="img/map_Sanya.jpg" alt="">
+                    </div>                    
+                </div>
+                <div class="HK">
+                    <div>
+                        <div>香港</div>
+                        <img src="img/map_HK.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="TaiWan">
+                    <div>
+                        <div>台湾</div>
+                        <img src="img/map_Taiwan.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ShangHai">
+                    <div>
+                        <div>上海</div>
+                        <img src="img/map_shanghai.jpg" alt="">
+                    </div>                   
+                </div>
+                <div class="Qing">
+                    <div>
+                        <div>青岛</div>
+                        <img src="img/map_Qing.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Mei">
+                    <div>
+                        <div>湄洲岛</div>
+                        <img src="img/map_Mei.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="Chong">
+                    <div>
+                        <div>冲绳</div>
+                        <img src="img/map_Chong.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="Bei">
+                    <div>
+                        <div>北海道</div>
+                        <img src="img/map_Bei.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div id="footer"></div>
+</div>
+<script>
+  $(function() {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+    })
+</script>
+</body>
+</html>
