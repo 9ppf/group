@@ -1,0 +1,235 @@
+ /* 去除最外层父元素的*/
+ .container{margin:0;
+           padding:0;
+}
+
+/* 登陆 */
+/*遮罩层、用户模块进行定位，实现堆叠*/
+.zhezhao,.user{
+   position:absolute;
+   width:100vw;
+   height:100vh; 
+}
+.zhezhao{z-index: 5}
+.user{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.show{
+z-index: 7;
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.show>div{
+margin-top:-19vh;
+}
+/*遮罩层的样式*/
+.zhezhao{
+background:rgba(162, 152, 152, 0.25)
+}
+/*视频的样式*/
+video{width:100%;
+height:100%;
+box-sizing:border-box;
+position: fixed;
+top:0px;
+left:0px;
+z-index: -9999;
+object-fit: fill
+}
+/*用户信息*/
+input{ display: block;
+border: none;
+box-sizing: border-box;
+padding: 0 2vw;
+height: 10vh;
+width: 28vw;
+color: #fff;
+line-height: 10vh;
+font-size: 28px;
+-webkit-box-flex: 1;
+-ms-flex: 1;
+flex: 1;
+border-radius:66px;
+background: hsla(0,0%,100%,.4);
+margin:4vh 0vw 0vh 0vw;
+outline: none;
+}
+/*提交按钮*/
+.btn{
+background-color: #fff;
+height: 10vh;
+width: 28vw;
+color: #ea4141;
+font-size: 40px;
+text-align: center;
+line-height: 9vh;
+margin-top: 4vh;
+border-radius: 66px;
+}
+.font{
+color: #fff;
+font-size: 28px;
+margin-top:4vh;
+display: flex;
+justify-content: space-between;
+}
+.eye{
+position:absolute;
+top:37.3vh;
+right:38vw;
+}
+/*提示内容*/
+#jingshi{
+width: 14vw;
+height: 10vh;
+border:.1rem solid rgba(0,0,0,0.3);
+position: absolute;
+top: 54vh;
+left: 43vw;
+background:rgba(0,0,0,0.3);
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+}
+#jingshi>div{
+width:13vw;
+height:8vh;
+background:rgba(0,0,0,0.7);
+color:#ffffff;
+text-align: center;
+line-height:8vh;
+font-size: 25px;
+}
+
+/* 注册 */
+.show>.reg{width:28vw;
+    position: absolute;
+    z-index:9;
+    margin-top:-10vh;
+    display:none;
+}
+.mes1{position: absolute;
+      top: 9vh;
+      right: 2vw;
+      font-size: 24px;
+ }
+ .cut{
+    width: 0vw;
+    height: 6vh;
+    position: absolute;
+    top: 8vh;
+    right: 12vw;
+    border: 1px solid #7575756e;
+ }
+ .eye2{
+    position: absolute;
+    top: 37.3vh;
+    right: 2vw;
+ }
+ /* 忘记密码 */
+ .show>.forget{
+     width:28vw;
+     height:54vh;
+     position: absolute;
+     z-index:10;
+     margin-top:-10vh;
+     display:none;
+ }
+ .mes2{
+    position: absolute;
+    top: 10.2vh;
+    right: 1vw;
+    font-size: 23px;
+    width: 9vw;
+    height: 5vh;
+    border: 2px solid #d8d8d869;
+    line-height: 5vh;
+    text-align: center;
+    background: #d8d8d869;
+    border-radius: 9px;
+
+ }
+ .forget>h3{
+    margin-left: 21vh;
+    font-size: 35px;
+ }
+ .eye3{
+    position: absolute;
+    top: 39vh;
+    right: 2vw; 
+ }
+ /* 选择页面 */
+ .choose{
+   background: rgba(25,25,25,0.1);
+   width: 33%;
+   height: 56%;
+   text-align: center;
+   padding-top: 3vh;
+   font-family: "幼圆";
+   border-radius: 40px;
+   position: relative;
+   padding: 1vh 2vw;
+   color: #fff;
+ }
+ /* 选择模块的标题 */
+ .c_title{
+   font-size: 4.5vh;
+   width: 100%;
+   height: 5vh;
+ }
+ /* 选择内容 */
+ .c_choose{
+   display: flex;
+   justify-content: space-between;
+ }
+ .c_choose>div{
+   width: 39vw;
+   height: 39vh;
+   border-left: 2px solid #e2cfcf;
+   font-size: 2.4vh;
+   font-weight: 900;
+   padding: 4vh;
+   padding-top: 6.5vh;
+   margin-top: 3vh;
+   position: relative;
+
+}
+.c_choose>div:hover{
+width:39.5vw;
+height:39.5vh;
+}
+.c_choose>div:first-child{
+   border-left:none;
+}
+.c_choose a{
+   z-index: 10;
+   position: absolute;
+   left: 3vh;
+   display: block;
+   width: 7vw;
+   height: 4vh;
+   border: 2px solid rgba(120, 173, 124, 0.1);
+   background: rgba(205, 220, 57, 0.68);
+   border-radius: 11px;
+   color: #fff;
+}
+.c_choose>div>a:hover{
+   width:7.5vw;
+   height:4.5vh;
+}
+.btn1{
+   bottom:0vh;
+}
+.btn2{
+   bottom:0vh
+}
+.btn3{
+   bottom:0vh;
+}

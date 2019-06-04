@@ -1,0 +1,164 @@
+/* body */
+body{
+    margin: 0;
+    padding: 0;
+}
+/*轮播图图片 */
+.carousel-item img{
+  width:19200px;
+  height:800px;
+}
+/* 四张大图 */
+.first>a>img{
+    margin:10px;
+    width:700px;
+    height:467px;
+}
+.bg{
+    width: 100%;
+    background-color: #efefef;
+}
+/* 大图和小图内边距 */
+.floor{padding: 0 10%}
+/* 八张小图的样式 */
+.floor>a>img{
+    margin:5px;
+    width: 352px;
+}
+/* 小图下过度文字 */
+.second span{
+    /*float:left;*/
+    color: #FFF;
+    line-height: 35px;
+    padding:5px 15px;
+    font-size:30px;
+    text-align:center;
+    list-style:none;
+}
+.second span:nth-child(1){
+    width: 290px;
+    background: #646464;
+    margin-right:-10px;
+}
+.second span:nth-child(2){
+    width: 155px;
+    background: #d5bf8d;
+}
+/* 三楼视频 */
+
+/* 地图 */
+#map{
+    background:black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#map>img{    
+    width:100vw;
+    height:93vh;
+}
+#city{
+    width:100vw;
+    height:93vh;
+    border:2px solid red;
+    position: absolute;
+}
+#map>div>div{
+    position: absolute;
+    color:#fff;
+}
+#city  img{display:none}
+#city>div:hover img{
+    display:block;
+    position: absolute;
+    z-index:999;
+}
+.london{    
+    left: 12%;
+    top: 18%; 
+}
+.Paris{ 
+    top: 23%;
+    left: 16%;
+}
+.Venice{
+    top: 26%;
+    left: 17%;
+ }
+.Prague{
+    top: 23%;
+    left: 22%;
+ }
+.Rome{
+    top: 29%;
+    left: 20%;
+ }
+.Santorini{
+    top: 32%;
+    left: 24%;
+ }
+.Maldives{
+    bottom: 39%;
+    right: 49%;
+ }
+.HKT{ 
+    bottom: 42%;
+    right: 37%;
+}
+.KUL{
+    bottom: 38%;
+    right: 33%;
+ }
+.Bail{ 
+    bottom: 29%;
+    right: 27%;
+}
+.snow{ 
+    bottom: 9%;
+    right: 12%;
+}
+.kili{
+    bottom: 3%;
+    right: 2%;
+ }
+.Dali{ 
+    top: 45%;
+    right: 37%;
+}
+.LJG{
+    top: 40%;
+    right: 36%;
+ }
+.Sanya{
+    bottom: 50%;
+    right: 32%;
+ }
+.HK{ 
+    top: 45%;
+    right: 29%;
+}
+.TaiWan{ 
+    top: 43%;
+    right: 26%;
+}
+.ShangHai{ 
+    top: 37%;
+    right: 26%;
+}
+.Qing{ 
+    top: 33%;
+    right: 27%;
+
+}
+.Mei{
+    top: 35%;
+    right: 23%;
+ }
+.Chong{ 
+    top: 41%;
+    right: 23%;
+}
+.Bei{
+    top: 28%;
+    right: 15%;
+ }

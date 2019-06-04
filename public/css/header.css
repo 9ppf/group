@@ -1,0 +1,101 @@
+.head{
+    height: 80px;
+    z-index: 2;
+    left: 0;
+    top: 48px;
+    width: 100%;
+    background: #416483;
+}
+.head i{
+    position: absolute;
+    left: 0;
+    background: #c6a16a;
+    height: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+.h-logo{
+    width: 186px;
+    height: 167px;
+    margin-left: -93px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    z-index: 2;
+}
+.h-logo a{
+    background:url(../img/logo.png) no-repeat;
+    padding-top:180px;
+    display: block;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+/*���е���������ı�*/
+.h-nav{
+    height: 80px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.h-nav ul{
+    width:1300px;
+    margin:0 auto;
+}
+ul{
+    list-style:none;
+}
+.h-nav>ul>li{
+    float: left;
+    position: relative;
+}
+.one>a{
+    padding-top: 0;
+    text-decoration: none;
+    border-top: 4px solid #fc6;
+    background: #345069;
+}
+.h-nav a{
+    display: block;
+    float: left;
+    height: 76px;
+    color: #fff;
+    width: 116px;
+    position: relative;
+}
+.h-nav a span{
+    line-height: 12px;
+    font-size:9px;
+    display: block;
+    font-weight: normal;
+    cursor: pointer;
+    position: relative;
+    color: #c2cad3;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding: 0;
+    margin: 0;
+}
+.h-nav b{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 21px 0 5px;
+    display: block;
+    position: relative;
+}
+.h-nav li.two{
+    margin-left:280px;
+}
+.h-nav a:hover,.h-nav li.sfhover a{
+    padding-top:0px;
+    text-decoration: none;
+}
+.h-nav b:hover{
+    padding-top:17px; 
+    padding-bottom:-24px;
+}
