@@ -69,14 +69,14 @@ div{
     background-position: 0 -41px;
 }
 .footer .f-foot {
-    width: 100vw;
+    width: 100%;
     float: left;
     background: #000;
     padding: 10px 0;
     margin-top: 50px;
 }
 .footer .f-foot dl {
-    width: 100vw;
+    width: 1200px;
     margin: 0 auto;
     display: table;
 }
