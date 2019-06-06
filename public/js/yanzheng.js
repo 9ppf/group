@@ -1,5 +1,5 @@
 //手机 
- var phone=function(){
+function phone(){
     var $ts=$("#tishi");
     var $js1=$("#jingshi");
     $js1.css("opacity","1");
@@ -17,7 +17,7 @@
  }   
  
  // 密码
- var upwd=function(){
+ function upwd(){
     var $ts=$("#tishi");
     var $js1=$("#jingshi");
     $js1.css("opacity","1");
