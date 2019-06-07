@@ -28,10 +28,10 @@
                 <div class="login">
                     <div>tubiao</div>
                     <div>
-                        <input type="text" placeholder="手机号码" class="phone"/>
+                        <input type="text" placeholder="手机号码" class="phone1"/>
                     </div>
                     <div>
-                        <input type="text" placeholder="密码" class="upwd"/>
+                        <input type="text" placeholder="密码" class="upwd1"/>
                     </div>
                     <div>
                         <button class="btn" onclick="javascript:login();">登录</button>
@@ -41,12 +41,16 @@
                         <span onclick="javascript:reg()">新用户注册</span>
                     </div>
                     <img src="./img/eye.png" alt="" class="eye"/>
+                    <!-- 提示信息 -->
+                    <div id="jingshi1">
+                        <div id="tishi1"></div>
+                    </div>
                 </div>
                 <!-- 注册,还差短信验证-->
                 <div class="reg">
                     <div>tubiao</div>
                         <div>
-                            <input type="text" placeholder="手机号码" class="phone"/>
+                            <input type="text" placeholder="手机号码" class="phone2"/>
                             <div class="cut"></div>
                             <div class="mes1">获取短信验证码</div>
                         </div>
@@ -54,7 +58,7 @@
                             <input type="text" placeholder="验证码" id="reg"/>
                         </div>
                         <div>
-                            <input type="text" placeholder="密码" class="upwd">
+                            <input type="text" placeholder="密码" class="upwd2">
                         </div>
                         <div>
                             <button class="btn" onclick="javascript:reg_reg();">注册</button>
@@ -64,29 +68,35 @@
                             <span onclick="javascript:newLogin()">去登陆</span>
                         </div>
                         <img src="./img/eye.png" alt="" class="eye2"/>
+                        <div id="jingshi2">
+                            <div id="tishi2"></div>
+                        </div>
                 </div>
                 <!-- 忘记密码 -->
                 <div class="forget">
                     <h3>重置密码</h3>
                     <div>
-                        <input type="text" placeholder="请输入注册过的手机号码" class="phone"/>
+                        <input type="text" placeholder="请输入注册过的手机号码" class="phone3"/>
                         <div class="mes2">获取短信验证码</div>
                     </div>
                     <div>
                         <input type="text" placeholder="验证码" id="reg2"/>
                     </div>
                     <div>
-                        <input type="text" placeholder="新密码" class="upwd">
+                        <input type="text" placeholder="新密码" class="upwd3">
                     </div>
                     <div>
                         <button class="btn" onclick="javascript:ok();">完成</button>
                     </div>
                     <img src="./img/eye.png" alt="" class="eye3"/>
+                    <div id="jingshi3">
+                        <div id="tishi3"></div>
+                    </div>
                 </div>
                 <!-- 验证信息提示框-->
-                <div id="jingshi">
+                <!-- <div id="jingshi">
                         <div id="tishi"></div>
-                </div>
+                </div> -->
             </div>
             <!-- 选择 -->
             <div class="choose"    style="opacity: 0;">

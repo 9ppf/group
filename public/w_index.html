@@ -12,6 +12,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/w_index.css">
+    <script src="js/w_index.js"></script>
 </head>
 <body>
 <div class="container-fluid p-0">
@@ -58,12 +59,20 @@
         <!-- 一楼四张大图-->
         <div class="floor">
             <div class="first">
-                <a href="#"><img src="./img/w_big12.jpg" alt=""/></a>
-                <a href="#"><img src="./img/w_big11.jpg" alt=""/></a>
+                <div>
+                   <a href="#"><img src="./img/w_big12.jpg" alt="" class="big_ph"/></a>  
+                </div>
+               <div>
+                  <a href="#"><img src="./img/w_big11.jpg" alt="" class="big_ph"/></a> 
+               </div>
             </div>
             <div class="first">
-                <a href="#"><img src="./img/w_big10.jpg" alt=""/></a>
-                <a href="#"><img src="./img/w_big9.jpg" alt=""/></a>
+                <div>
+                  <a href="#"><img src="./img/w_big10.jpg" alt="" class="big_ph"/></a>                   
+                </div>
+                <div>
+                   <a href="#"><img src="./img/w_big9.jpg" alt="" class="big_ph"/></a>  
+                </div>
             </div>
         </div>
         <!-- 楼层过渡-->
@@ -82,28 +91,28 @@
         <div class="floor">
             <div>
                 <div>
-                   <a href="#"><img src="./img/w_center2.jpg" alt=""/></a>
+                   <a href="#"><img src="./img/w_center2.jpg" alt="" class="small_ph"/></a>
                    <div>
                        <h4>2019.6.1</h4>
                        <p>06月第01季客片</p>
                    </div>
                 </div>
                 <div>
-                   <a href="#"><img src="./img/w_center3.jpg" alt=""/></a>
+                   <a href="#"><img src="./img/w_center3.jpg" alt="" class="small_ph"/></a>
                    <div>
                        <h4>2019.5.30</h4>
                        <p>05月第04季客片</p>
                    </div> 
                 </div>
                 <div>
-                    <a href="#"><img src="./img/w_center4.jpg" alt=""/></a>
+                    <a href="#"><img src="./img/w_center4.jpg" alt="" class="small_ph"/></a>
                     <div>
                         <h4>2019.5.28</h4>
                         <p>05月第03季客片</p>
                     </div>
                 </div>
                 <div>
-                    <a href="#"><img src="./img/w_center5.jpg" alt=""/></a>
+                    <a href="#"><img src="./img/w_center5.jpg" alt="" class="small_ph"/></a>
                     <div>
                         <h4>2019.5.2</h4>
                         <p>05月第02季客片</p>
@@ -112,28 +121,28 @@
             </div>
             <div>
                 <div>
-                  <a href="#"><img src="./img/w_center6.jpg" alt=""/></a>
+                  <a href="#"><img src="./img/w_center6.jpg" alt="" class="small_ph"/></a>
                   <div>
                       <h4>2019.4.18</h4>
                       <p>04月第04季客片</p>
                   </div>
                 </div>
                 <div>
-                  <a href="#"><img src="./img/w_center7.jpg" alt=""/></a>
+                  <a href="#"><img src="./img/w_center7.jpg" alt="" class="small_ph"/></a>
                   <div>
                       <h4>2019.4.16</h4>
                       <p>04月第03季客片</p>
                   </div>
                 </div>
                 <div>
-                    <a href="#"><img src="./img/w_center8.jpg" alt=""/></a>
+                    <a href="#"><img src="./img/w_center8.jpg" alt="" class="small_ph"/></a>
                     <div>
                         <h4>2019.4.06</h4>
                         <p>04月第01季客片</p>
                     </div>
                 </div>
                 <div>
-                    <a href="#"><img src="./img/w_center9.jpg" alt=""/></a>
+                    <a href="#"><img src="./img/w_center9.jpg" alt="" class="small_ph"/></a>
                     <div>
                         <h4>2019.4.02</h4>
                         <p>04月第02季</p>
@@ -156,35 +165,54 @@
         </div>
         <!-- 三楼视频-->
         <div id="video-player" class="video-play floor">
-           <div class="video_top">
+            <!-- 上层视频 -->
+            <div class="video_top">
                <div class="big_video">
-                   <div class="v_ph v_ph1">
-                       <img src="img/video2.jpg" alt="">
+                   <div class="play" onclick="javascript:play1()">
+                       <img src="./img/g_play.png" alt="" class="img_play">
                    </div>
-                   <video src="video/w_four.mp4"  loop autoplay muted></video>
+                   <div class="v_ph v_ph1">
+                       <img src="img/video2.jpg" alt="" class="img2">
+                   </div>
+                   <video src="video/w_four.mp4" class="video"></video>
                </div>
            </div>
+           <!-- 下层视频 -->
            <div class="three_v">
+               <!-- 视频一 -->
                <div>
-                   <div class="v_ph v_ph2">
-                       <img src="img/video2.jpg" alt="">
+                    <div class="play2 play2_1" onclick="javascript:play2();">
+                       <img src="./img/g_play.png" alt="" class="img_play2 img2_1">
+                    </div>
+                    <div class="v_ph v_ph2">
+                       <img src="img/video2.jpg" alt="" class="img3">
                    </div>
-                   <video src="video/w_two.mp4"  loop autoplay muted></video>
+                   <video src="video/w_two.mp4" class="small_video1"></video>
                </div>
+               <!-- 视频二 -->
                <div>
-                   <div class="v_ph v_ph2">
-                       <img src="img/video2.jpg" alt="">
+                  <div class="play2 play2_2" onclick="play3();">
+                       <img src="./img/g_play.png" alt="" class="img_play2 img2_2">
                    </div>
-                   <video src="video/w_three.mp4"  loop autoplay muted></video>
+                   <div class="v_ph v_ph2">
+                       <img src="img/video2.jpg" alt="" class="img4">
+                   </div>
+                   <video src="video/w_three.mp4" class="small_video2"></video>
                </div>
-               <div>
-                   <div class="v_ph v_ph2">
-                       <img src="img/video2.jpg" alt="">
+               <!-- 视频三 -->
+               <div >
+                  <div class="play2 play2_3"  onclick="play4();">
+                       <img src="./img/g_play.png" alt="" class="img_play2 img2_3">
                    </div>
-                   <video src="video/w_one.mp4"  loop autoplay muted></video>
+                   <div class="v_ph v_ph2">
+                       <img src="img/video2.jpg" alt="" class="img5">
+                   </div>
+                   <video src="video/w_one.mp4"  class="small_video3"></video>
                </div>
            </div>
         </div>
+        <script>
+        </script>
         <!-- 视频和承诺之间的过渡性 -->
         <div class="our">
          <div></div>
@@ -199,9 +227,9 @@
                     </div>
                   <div class="p_word">
                       <b>品牌介绍</b>
-                      <span>关于蒙娜丽莎集团,我们想为您拍一张这样的照片</span>
-                      <span>ABOUT THE MONA LISA,WE'D LIKE TO TAKE A </span>
-                      <span>PICTURE LIKE THIS FOR YOU.</span>
+                      <p>关于蒙娜丽莎集团,我们想为您拍一张这样的照片<br/>
+                      ABOUT THE MONA LISA,WE'D LIKE TO TAKE A <br/>
+                      PICTURE LIKE THIS FOR YOU.<br/></p>
                   </div>
                 </div>
                 <div class="pro">
@@ -210,9 +238,9 @@
                    </div>
                    <div class="p_word">
                        <b>五大承诺</b>
-                       <span>七星级服务标准,开启全"心"婚纱影像时代</span>
-                       <span>SEVEN - STAR ,OPEN THE WHOLE "HEART" </span>
-                       <span>WEDDING IMAGE ERA.</span>
+                       <p>七星级服务标准,开启全"心"婚纱影像时代<br/>
+                       SEVEN - STAR ,OPEN THE WHOLE "HEART" <br/>
+                       WEDDING IMAGE ERA.<br/></p>
                    </div>
                 </div>
             </div>
@@ -223,8 +251,8 @@
                    </div>
                    <div class="p_word">
                        <b>化妆品造型介绍</b>
-                       <span>国际一线彩妆</span>
-                       <span>INTERNATIONAL FIRST LINE MAKE-UP</span>
+                       <p>国际一线彩妆<br/>
+                       INTERNATIONAL FIRST LINE MAKE-UP<br/></p>
                    </div>
                 </div>
                 <div class="home">
@@ -233,8 +261,8 @@
                     </div>
                     <div class="p_word">
                         <b>独家基地介绍</b>
-                        <span>独家拍摄基地</span>
-                        <span>EXCLUSIVE SHOOTING BASE</span>
+                        <p>独家拍摄基地<br/>
+                        EXCLUSIVE SHOOTING BASE<br/></p>
                     </div>
                 </div>
             </div>
@@ -245,9 +273,9 @@
                    </div>
                    <div class="p_word">
                        <b>尊享特权</b>
-                       <span>轻松来蒙娜拍照，一键抢订，一次搞定</span>
-                       <span>EASY TO TAKE A PICTURE OF MONA, A KEY TO </span>
-                       <span>GRAB, A HIGH.</span>
+                       <p>轻松来蒙娜拍照，一键抢订，一次搞定<br/>
+                       EASY TO TAKE A PICTURE OF MONA, A KEY TO <br/>
+                       GRAB, A HIGH.<br/></p>
                    </div>
                 </div>
                 <div class="pay">
@@ -256,9 +284,9 @@
                     </div>
                     <div class="p_word">
                         <b>汇款方式</b>
-                        <span>网络支付，省时、省力、省心</span>
-                        <span>NETWORK PAYMENT, SAVE TIME, EFFORT, SAVE THE</span>
-                        <span> HEART.</span>
+                        <p>网络支付，省时、省力、省心<br/>
+                        NETWORK PAYMENT, SAVE TIME, EFFORT, SAVE THE<br/>
+                         HEART.<br/></p>
                     </div>
                 </div>
             </div>

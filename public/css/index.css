@@ -85,12 +85,12 @@ top:37.3vh;
 right:38vw;
 }
 /*提示内容*/
-#jingshi{
+#jingshi1,#jingshi2,#jingshi3{
 width: 14vw;
 height: 10vh;
 border:.1rem solid rgba(0,0,0,0.3);
 position: absolute;
-top: 54vh;
+top: 34vh;
 left: 43vw;
 background:rgba(0,0,0,0.3);
 display: flex;
@@ -98,7 +98,7 @@ justify-content: center;
 align-items: center;
 opacity: 0;
 }
-#jingshi>div{
+#jingshi1>div,#jingshi2>div,#jingshi3>div{
 width:13vw;
 height:8vh;
 background:rgba(0,0,0,0.7);
