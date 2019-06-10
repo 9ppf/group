@@ -1,0 +1,81 @@
+/* 去除所有元素的内外边距 */
+*{margin: 0;
+  padding:0}
+/* 整个背景呈现黑色 */
+body{
+    background-color: #000 !important;
+}
+/* 轮播图上的渲染颜色 */
+.div1{    
+    background: linear-gradient(to right,rgba(65, 100, 131, 0.22) 0%,rgba(0,0,0,0) 25%) no-repeat,linear-gradient(to left,rgba(65, 100, 131, 0.32) 0%,rgba(0,0,0,0) 25%) no-repeat,linear-gradient(to bottom,rgb(65, 100, 131) 0%,rgba(65, 100, 131, 0.34) 15%,rgba(0,0,0,0) 25%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    }
+/* 轮播图 */
+.wd_lunbo{
+    width:100vw;
+    height:123vh;
+    position: relative;
+}
+.wd_banner{
+    width:100%;
+    height:100%;
+}
+.wd_tops{
+width:100vw;
+position: absolute;
+z-index: 4;
+bottom:0vh;
+}
+/* 地图 */
+.wd_map{
+    width:100vw;
+    height:132vh;
+    position: relative;
+}
+.wd_left1{
+    position: absolute;
+    top: -46vh;
+    z-index: 6;
+    height: 107vh;
+    width: 95vw;
+}
+.wd_mapb{
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    bottom: 0vh;
+    right: 0vw;
+/* z-index: 6; */
+
+};
+.img4{
+   width:100vw;
+   position: absolute;
+   top: 129vh;
+   z-index: 6;
+}
+.img5{
+width: 100vw;
+position: absolute;
+top: 177vh;
+z-index: 5;
+}
+.img6{
+position: absolute;
+top: 272vh;
+z-index: 5;
+}
+.img7{
+   position:absolute;
+   top:272vh;
+   z-index:4
+}
+.img8{
+position: absolute;
+top: 350vh;
+z-index: 8;
+}

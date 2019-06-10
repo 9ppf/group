@@ -1,11 +1,31 @@
+/* 所有超链接的字体样式 */
+a{
+    color:#333;
+    text-decoration: none;
+}
+/* 所有ul的样式 */
+ul{
+    list-style:none;
+}
+/* 所有li的样式 */
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding: 0;
+    margin: 0;
+}
+/* 整个头部的总体样式 */
 .head{
-    height: 80px;
+    height: 8vh;
     z-index: 2;
-    left: 0;
-    top: 48px;
+    position:fixed;
+    top:0px ;
+    left:0px;
+    z-index:999;
     width: 100%;
     background: #416483;
 }
+/* 最上层的黄色边框线 */
 .head i{
     position: absolute;
     left: 0;
@@ -14,43 +34,41 @@
     overflow: hidden;
     width: 100%;
 }
+/* 图标 */
 .h-logo{
-    width: 186px;
-    height: 167px;
+    width: 10vw;
+    height: 18vh;
     margin-left: -93px;
     overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 4px;
-    z-index: 2;
+    margin: 0 auto;
 }
 .h-logo a{
+    width:100%;
+    height: 100%;
     background:url(../img/logo.png) no-repeat;
+    background-size:contain;
     padding-top:180px;
     display: block;
 }
-a{
-    color:#333;
-    text-decoration: none;
-}
-/*���е���������ı�*/
+
+/*导航栏*/
 .h-nav{
-    height: 80px;
+    height: 25vh;
     text-align: center;
     width: 100%;
     position: relative;
     z-index: 1;
+    top: -19.7vh;
 }
-.h-nav ul{
-    width:1300px;
-    margin:0 auto;
+.h-nav>ul{
+    width: 65vw;
+    margin: 0vh auto;
+    /* border: 2px solid red; */
+    height: 10vh;
+    padding: 0;
 }
-ul{
-    list-style:none;
-}
-.h-nav>ul>li{
-    float: left;
-    position: relative;
+.h-nav>ul>li{float: left;
+             position: relative;
 }
 .one>a{
     padding-top: 0;
@@ -58,44 +76,85 @@ ul{
     border-top: 4px solid #fc6;
     background: #345069;
 }
-.h-nav a{
+/* 导航栏主体的超链接 */
+.h-nav>ul>li>a{
     display: block;
     float: left;
-    height: 76px;
+    height: 8vh;
     color: #fff;
-    width: 116px;
+    width: 6vw;
     position: relative;
+    text-align: center;
+    top: 1.7vh;
 }
-.h-nav a span{
-    line-height: 12px;
-    font-size:9px;
+.h-nav>ul>li>a>span{
+    width: 100%;
+    height: 35%;
+    font-size: 9px;
     display: block;
     font-weight: normal;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    bottom: 1vh;
     color: #c2cad3;
+    /* border: 2px solid red; */
 }
-li{
-    display: list-item;
-    text-align: -webkit-match-parent;
-    padding: 0;
-    margin: 0;
-}
-.h-nav b{
+.h-nav>ul>li>a>b{
+    width:100%;
+    height: 39%;
     font-weight: normal;
-    font-size: 16px;
-    margin: 21px 0 5px;
+    margin: 1vh 0 1vh;
     display: block;
-    position: relative;
+    position: absolute;
+    top:0.2vh;
+    font-size: .8rem;
+    /* border: 2px solid red; */
+}
+.card_fu>ul>li>a{color:#000}
+/* 导航栏的悬浮效果 */
+.card_fu:hover .h_card{
+    transition: .5s;
+    overflow: hidden;
+    visibility: visible
+}
+.card_fu:hover .fu_b{
+    transition: 0.5s;
+    top:2.5vh;
+}
+.card_fu:hover .fu_span{
+    transition: 0.5s;
+    top:1vh;
+}
+
+/* 名片 */
+.h_card{
+    width: 6vw;
+    height:0vh;
+    position: absolute;
+    top: 9.5vh;
+    padding: 0px;
+    background: rgba(255,255,255,0.6);
+    visibility: hidden;
+    font-size:0.8rem;
+}
+.h_card>li{
+    padding: 0.5vh 0vw;
 }
 .h-nav li.two{
-    margin-left:280px;
+    margin-left: 17vw;
 }
 .h-nav a:hover,.h-nav li.sfhover a{
     padding-top:0px;
     text-decoration: none;
 }
-.h-nav b:hover{
-    padding-top:17px; 
-    padding-bottom:-24px;
+
+/* 有关于我们 */
+.h_our{ padding: 3vh 0vw 2vh;}
+.h_our>div{margin-bottom:1vh}
+.h_ours:hover .h_our{
+    transition: .5s;
+    overflow: hidden;
+    visibility: visible;
+    height:12vh;
 }
+.card_a:hover{border-top: 4px solid #fc6;}

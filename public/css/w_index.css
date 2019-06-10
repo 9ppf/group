@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
 }
+a{color:#fff}；
 
 /*大图和小图间过渡层样式 */
 .bg{
@@ -110,7 +111,7 @@ body{
 }
 .play,.play2{
       position: absolute;
-      z-index:999;
+      z-index:666;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -123,6 +124,11 @@ body{
 .play2{
     width: 27vw;
     height: 48vh;
+}
+.v_ph2>img{
+    height: 120%;
+    position: relative;
+    top: -8vh;
 }
 /* 视频和承诺之间的过度 */
 .our{width:100%;}
@@ -140,7 +146,6 @@ body{
     width: 73%;
     height: 86vh;
     margin: 0 auto;
-    /* border: 2px solid red; */
     box-sizing: border-box;
     padding: 2vh 2vw;
 }
@@ -167,7 +172,16 @@ body{
 .p_word{
     color: #a58f7d;
     width: 23vw;
-    border: 2px solid red;
+    font-size:.7rem;
+    padding-top: 4vh;
+}
+.p_word>.p1{
+    width: 7vw;
+    margin: 0 auto;
+}
+.p_word>.p2{
+    width: 20vw;
+    margin: 0 auto;
 }
 .promise img{
     width: 5vw;
@@ -199,7 +213,7 @@ body{
 #city>div>div:hover img{
     display:block;
     position: absolute;
-    z-index: 999;
+    z-index: 888;
 }
 .london{    
     left: 12%;

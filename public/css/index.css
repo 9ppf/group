@@ -62,52 +62,52 @@ outline: none;
 }
 /*提交按钮*/
 .btn{
-background-color: #fff;
-height: 10vh;
-width: 28vw;
-color: #ea4141;
-font-size: 40px;
-text-align: center;
-line-height: 9vh;
-margin-top: 4vh;
-border-radius: 66px;
+   background-color: #fff;
+   height: 10vh;
+   width: 28vw;
+   color: #ea4141;
+   font-size: 5vh;
+   text-align: center;
+   line-height: 8vh;
+   margin-top: 4vh;
+   border-radius: 66px;
 }
 .font{
 color: #fff;
-font-size: 28px;
+font-size: 3.8vh;
 margin-top:4vh;
 display: flex;
 justify-content: space-between;
 }
 .eye{
 position:absolute;
-top:37.3vh;
+top:36.3vh;
 right:38vw;
 }
 /*提示内容*/
 #jingshi1,#jingshi2,#jingshi3{
-width: 14vw;
-height: 10vh;
-border:.1rem solid rgba(0,0,0,0.3);
-position: absolute;
-top: 34vh;
-left: 43vw;
-background:rgba(0,0,0,0.3);
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0;
+   border: .1rem solid rgba(0,0,0,0.3);
+   position: absolute;
+   top: 34vh;
+   left: 43vw;
+   background: rgba(0,0,0,0.3);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   padding: 1vh 0.5vw;
 }
 #jingshi1>div,#jingshi2>div,#jingshi3>div{
-width:13vw;
-height:8vh;
-background:rgba(0,0,0,0.7);
-color:#ffffff;
-text-align: center;
-line-height:8vh;
-font-size: 25px;
+    background: rgba(0,0,0,0.7);
+    color: #ffffff;
+    text-align: center;
+    line-height: 8vh;
+    font-size: 25px;
+    padding: 1vh 0.8vw
 }
-
+#jingshi2,#jingshi3{
+   left:7vw;
+}
 /* 注册 */
 .show>.reg{width:28vw;
     position: absolute;
@@ -115,16 +115,16 @@ font-size: 25px;
     margin-top:-10vh;
     display:none;
 }
-.mes1{position: absolute;
-      top: 9vh;
-      right: 2vw;
-      font-size: 24px;
+.mes1{ position: absolute;
+   top: 10.5vh;
+   right: 2vw;
+   font-size: 3vh;
  }
  .cut{
     width: 0vw;
     height: 6vh;
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     right: 12vw;
     border: 1px solid #7575756e;
  }
@@ -143,18 +143,14 @@ font-size: 25px;
      display:none;
  }
  .mes2{
-    position: absolute;
-    top: 10.2vh;
-    right: 1vw;
-    font-size: 23px;
-    width: 9vw;
-    height: 5vh;
-    border: 2px solid #d8d8d869;
-    line-height: 5vh;
-    text-align: center;
-    background: #d8d8d869;
-    border-radius: 9px;
-
+   position: absolute;
+   top: 13vh;
+   right: 1vw;
+   font-size: 3vh;
+   border: 2px solid #d8d8d869;
+   background: #d8d8d869;
+   border-radius: 14px;
+   padding: 0.8vh 0.5vw;
  }
  .forget>h3{
     margin-left: 21vh;
@@ -162,7 +158,7 @@ font-size: 25px;
  }
  .eye3{
     position: absolute;
-    top: 39vh;
+    top: 41vh;
     right: 2vw; 
  }
  /* 选择页面 */
@@ -232,4 +228,13 @@ height:39.5vh;
 }
 .btn3{
    bottom:0vh;
+}
+
+/*placeholder的样式 */
+input::-webkit-input-placeholder{
+   color:gray;
+   font-size:1.2rem;
+}
+.container{
+   font-size:1rem
 }

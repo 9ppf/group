@@ -9,6 +9,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
 </head>
 <body>
 <div class="head">
@@ -20,52 +21,121 @@
     </div>
     <div class="h-nav">
         <ul>
-            <li class="one sfhover">
-                <a href="" >
-                    <b style="top:0px">网站首页</b>
-                    <span style="top:0px">HOME</span>
+            <li class="one sfhover card_fu">
+                <a href="" class="card_a">
+                    <b class="fu_b">网站首页</b>
+                    <span class="fu_span">HOME</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <b>明星网红</b>
-                    <span>STAR</span>
+            <li class="card_fu">
+                <a href="" class="card_a">
+                    <b class="fu_b">明星网红</b>
+                    <span class="fu_span">STAR</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <b>粉丝好评</b>
-                    <span>BOOK</span>
+            <li class="card_fu">
+                <a href="" class="card_a">
+                    <b class="fu_b">粉丝好评</b>
+                    <span class="fu_span">BOOK</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <b>关于我们</b>
-                    <span>ABOUT</span>
+            <li class="h_ours card_fu">
+                <a href="" class="card_a">
+                    <b class="fu_b">关于我们</b>
+                    <span class="fu_span">ABOUT</span>
                 </a>
+                <div class="h_our h_card">
+                    <div><a>品牌介绍</a></div>
+                    <div><a>联系我们</a></div>
+                </div>
             </li>
-            <li class="two">
-                <a href="">
-                    <b>全球客片</b>
-                    <span>LOVESHOW</span>
+            <li class="two card_fu card_fu1">
+                <a href="" class="card_a">
+                    <b class="fu_b">全球客片</b>
+                    <span class="exist_span fu_span">LOVESHOW</span>
                 </a>
+                <ul class="h_card h_card1">
+                    <li><a href="#">明星网红</a></li>
+                    <li><a href="#">每日推荐</a></li>
+                    <li><a href="#">三亚客片</a></li>
+                    <li><a href="#">云南客片</a></li>
+                    <li><a href="#">厦门客片</a></li>
+                    <li><a href="#">青海客片</a></li>
+                    <li><a href="#">青岛客片</a></li>
+                    <li><a href="#">西藏客片</a></li>
+                    <li><a href="#">香港客片</a></li>
+                    <li><a href="#">巴厘岛客片</a></li>
+                    <li><a href="#">济州岛客片</a></li>
+                    <li><a href="#">日本客片</a></li>
+                    <li><a href="#">塞班岛客片</a></li>
+                    <li><a href="#">马尔代夫客片</a></li>
+                    <li><a href="#">迪拜客片</a></li>
+                    <li><a href="#">欧洲客片</a></li>
+                    <li><a href="#">泰国客片</a></li>
+                    <li><a href="#">全家福</a></li>
+                    <li><a href="#">艺术写真</a></li>
+              </ul>
             </li>
-            <li>
-                <a href="">
-                    <b>海外样片</b>
-                    <span>OVERSEAS</span>
+            <!-- 下拉菜单 -->
+            <script>
+                $('.card_fu1').mouseenter(function(){
+                    card_fu1()
+                })
+            </script>
+            <li class="card_fu card_fu2">
+                <a href="" class="card_a">
+                    <b class="fu_b">海外样片</b>
+                    <span class="exist_span fu_span">OVERSEAS</span>
                 </a>
+                <ul  class="h_card h_card2">
+                    <li><a href="w_details">伦敦</a></li>
+                    <li><a href="w_details">巴黎</a></li>
+                    <li><a href="w_details">威尼斯</a></li>
+                    <li><a href="w_details">布拉格</a></li>
+                    <li><a href="w_details">罗马</a></li>
+                    <li><a href="w_details">圣托里尼</a></li>
+                    <li><a href="w_details">马尔代夫</a></li>
+                    <li><a href="w_details">普吉岛</a></li>
+                    <li><a href="w_details">吉隆坡</a></li>
+                    <li><a href="w_details">峇里岛</a></li>
+                    <li><a href="w_details">雪梨</a></li>
+                    <li><a href="w_details">纽西兰</a></li>
+                    <li><a href="w_details">冲绳</a></li>
+                    <li><a href="w_details">北海道</a></li>
+                </ul>
             </li>
-            <li class="">
-                <a href="">
-                    <b>国内样片</b>
-                    <span>CHINA</span>
+            <!-- 下拉菜单 -->
+            <script>
+                $(".card_fu2").mouseenter(function(){
+                    card_fu2();
+                })
+            </script>
+            <li class="card_fu card_fu3">
+                <a href="" class="card_a">
+                    <b class="fu_b">国内样片</b>
+                    <span class="fu_span">CHINA</span>
                 </a>
+                <ul class="h_card h_card3">
+                    <li><a href="w_details">大理</a></li>
+                    <li><a href="w_details">丽江</a></li>
+                    <li><a href="w_details">三亚</a></li>
+                    <li><a href="w_details">香港</a></li>
+                    <li><a href="w_details">台湾</a></li>
+                    <li><a href="w_details">上海</a></li>
+                    <li><a href="w_details">青岛</a></li>
+                    <li><a href="w_details">湄洲岛</a></li>
+                </ul>
             </li>
-            <li class="">
-                <a href="">
-                    <b>美妆造型</b>
-                    <span>MAKEUP</span>
+            <!-- 下拉菜单 -->
+            <script>
+                $('.card_fu3').mouseenter(function(){
+                    card_fu3();
+                })
+            </script>
+            <li class="card_fu card_fu4">
+                <a href="" class="card_a">
+                    <b class="fu_b">美妆造型</b>
+                    <span class="exist_span fu_span">MAKEUP</span>
                 </a>
             </li>
         </ul>
