@@ -11,314 +11,434 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .first>a>img{
-            margin:10px;
-        }
-        .bg{
-            width: 100%;
-            background-color: #efefef;
-        }
-        .floor{
-            padding-left:10%;
-            padding-right:10%;
-
-        }
-        .floor>a>img{
-            margin:5px;
-
-        }
-        .second span{
-            color: #FFF;
-            line-height: 35px;
-            padding:5px 15px;
-            font-size:30px;
-            text-align:center;
-            list-style:none;
-        }
-        .second span:nth-child(1){
-            width: 290px;
-            background: #646464;
-            margin-right:-10px;
-        }
-        .second span:nth-child(2){
-            width: 155px;
-            background: #d5bf8d;
-        }
-        .bh{
-            height: 92vh;
-        }
-        .video-play{
-            max-width: 1450px;
-            height: 660px;
-            background: grey;
-            position: relative;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        div>a>p{
-            font-size: 16px;
-            color: #000;
-        }
-        div>a:hover{
-            text-decoration: none;
-            color: #000;
-        }
-        .tran>a>img:hover{
-            transform: scale(1.03);
-        }
-        .video-play video {
-            width: 100%;
-            height: 660px;
-        }
-        .home .video-wrap {
-            max-width: 1450px;
-            margin: 0 auto;
-            position: relative;
-        }
-        .home .bx-wrapper {
-            border: none;
-            margin-bottom: 0;
-            background: transparent;
-            box-shadow: none;
-        }
-        .video-play {
-            max-width: 1450px;
-            height: 660px;
-            background: grey;
-            position: relative;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .big-post-icon {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -116px;
-            margin-top: 32px;
-            /*background-color: #000;*/
-        }
-        .post-mask {
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.2);
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        .post-icon {
-            position: absolute;
-            left: 35%;
-            top: 18%;
-            margin-left: -153px;
-            margin-top: -40px;
-        }
-        /*.big-post-icon {*/
-            /*position: absolute;*/
-            /*left: 50%;*/
-            /*top: 50%;*/
-            /*margin-left: -116px;*/
-            /*margin-top: 32px;*/
-            /*/!* background-color: #000; *!/*/
-        /*}*/
-        /*.home .video-control li a {*/
-            /*display: block;*/
-            /*height: 274px;*/
-            /*position: relative;*/
-        /*}*/
-        /*.video-control li {*/
-            /*height: 274px;*/
-        /*}*/
-    </style>
+    <link rel="stylesheet" href="css/w_index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/w_index.js"></script>
 </head>
 <body>
 <div class="container-fluid p-0">
-    <div style="height:80px;"></div>
-    <!-- 轮播图-->
-    <div id="demo" class="carousel" data-ride="carousel">
-        <!--1.轮播图片 -->
-        <div class="carousel-inner bh">
-            <div class="carousel-item active">
-                <a href=""><img class="w-100" src="./img/g_banner1.jpg" alt=""/></a>
-            </div>
-            <div class="carousel-item">
-                <a href=""><img class="w-100" src="./img/g_banner2.jpg" alt=""/></a>
-            </div>
-            <div class="carousel-item">
-                <a href=""><img class="w-100" src="./img/g_banner3.jpg" alt=""/></a>
-            </div>
-            <div class="carousel-item">
-                <a href=""><img class="w-100" src="./img/g_banner4.jpg" alt=""/></a>
-            </div>
-        </div>
-        <!--2.左右箭头 -->
-        <a data-slide="next" href="#demo" class="carousel-control-next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-        <a data-slide="prev" href="#demo" class="carousel-control-prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <!--3.轮播指示符 -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-            <li data-target="#demo" data-slide-to="3"></li>
-        </ul>
-    </div>
-    <!-- 楼层过渡-->
-    <div class="text-center p-4">
-        <img src="./img/g_tran1.png" alt=""/>
-    </div>
-    <!-- 一楼四张大图-->
-    <div class="floor d-flex align-middle">
-        <div class="first">
-            <a href="#"><img src="./img/g_pic1.jpg" alt=""/></a>
-            <a href="#"><img src="./img/g_pic2.jpg" alt=""/></a>
-        </div>
-        <div class="first">
-            <a href="#"><img src="./img/g_pic3.jpg" alt=""/></a>
-            <a href="#"><img src="./img/g_pic4.jpg" alt=""/></a>
-        </div>
-    </div>
-    <!-- 楼层过渡-->
-    <div class="text-center p-4">
-        <img src="./img/g_tran1.png" alt=""/>
-    </div>
-    <div class="text-center p-3 bg">
-        <img src="./img/g_tran2.png" alt=""/>
-    </div>
-    <div class="text-center p-4">
-        <img src="./img/g_tran3.png" alt=""/>
-    </div>
-    <!-- 二楼八张小图-->
-    <div class="floor d-flex tran">
-        <a href="#">
-            <img src="./img/g_pic5.jpg" alt=""/>
-            <p>2019.03.26 <br/> 03月第04季客片</p>
-        </a>
-        <a href="#">
-            <img src="./img/g_pic6.jpg" alt=""/>
-            <p>2019.03.20 <br/> 03月第03季客片</p>
-        </a>
-        <a href="#">
-            <img src="./img/g_pic7.jpg" alt=""/>
-            <p>2019.03.16 <br/> 03月第02季客片</p>
-        </a>
-        <a href="#">
-            <img src="./img/g_pic8.jpg" alt=""/>
-            <p>2019.03.08 <br/> 03月第01季客片</p>
-        </a>
-    </div>
-    <div class="floor d-flex tran">
-        <a href="#">
-            <img src="./img/g_pic9.jpg" alt=""/>
-            <p>2019.02.10 <br/> 02月第01季客片</p>
-        </a>
-        <a href="#">
-            <img src="./img/g_pic10.jpg" alt=""/>
-            <p>2019.01.30 <br/> 01月第04季客片</p>
-        </a>
-        <a href="#">
-            <img src="./img/g_pic11.jpg" alt=""/>
-            <p>2019.01.19 <br/> 01月第03季客片</p>
-        </a>
-        <a href="#">
-            <img src="./img/g_pic12.jpg" alt=""/>
-            <p>2019.01.11 <br/> 01月第02季客片</p>
-        </a>
-    </div>
-    <!-- 楼层过渡-->
-    <div class="text-center p-4">
-        <img src="./img/g_tran1.png" alt=""/>
-    </div>
-    <div class="second" align="center">
-        <span>DEMO FILM</span>
-        <span>拍摄影像</span>
-    </div>
-    <div class="text-center p-4">
-        <img src="./img/g_tran4.png" alt=""/>
-    </div>
-    <!-- 三楼视频-->
-    <div class="home">
-            <div class="video-wrap">
-                <div id="video-player" class="video-play">
-                    <video id="v3" src="video/g_vid1.mp4" style="background:url(http://www.mnls.com/statics/2018/images/video.jpg) no-repeat center"></video>
-                    <img id="big" class="big-post-icon" src="./img/g_play.png" style="display: block;">
-
+    <!-- 头部导航栏 -->
+    <div id="header"></div>
+    <!-- 中间主体 -->
+    <div id="main_body">
+        <!-- 轮播图-->
+        <div id="demo" class="carousel" data-ride="carousel">
+            <!--1.轮播图片 -->
+            <div class="carousel-inner bh">
+                <div class="carousel-item active">
+                    <a href=""><img class="w-100" src="./img/g_banner1.jpg" alt=""/></a>
                 </div>
-
+                <div class="carousel-item">
+                    <a href=""><img class="w-100" src="./img/g_banner2.jpg" alt=""/></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="w-100" src="./img/g_banner3.jpg" alt=""/></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="w-100" src="./img/g_banner4.jpg" alt=""/></a>
+                </div>
+            </div>
+            <!--2.左右箭头 -->
+            <a data-slide="next" href="#demo" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a data-slide="prev" href="#demo" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!--3.轮播指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+        </div>
+        <!-- 楼层过渡-->
+        <div class="text-center p-4">
+            <img src="./img/g_tran1.png" alt=""/>
+        </div>
+        <!-- 一楼四张大图-->
+        <div class="floor">
+            <div class="first">
+                <div>
+                   <a href="#"><img src="./img/g_pic1.jpg" alt="" class="big_ph"/></a>
+                </div>
+               <div>
+                  <a href="#"><img src="./img/g_pic2.jpg" alt="" class="big_ph"/></a>
+               </div>
+            </div>
+            <div class="first">
+                <div>
+                  <a href="#"><img src="./img/g_pic3.jpg" alt="" class="big_ph"/></a>
+                </div>
+                <div>
+                   <a href="#"><img src="./img/g_pic4.jpg" alt="" class="big_ph"/></a>
+                </div>
+            </div>
+        </div>
+        <!-- 楼层过渡-->
+        <div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran1.png" alt=""/>
+            </div>
+            <div class="text-center p-3 bg">
+                <img src="./img/g_tran2.png" alt=""/>
+            </div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran3.png" alt=""/>
+            </div>
+        </div>
+        <!-- 二楼八张小图-->
+        <div class="floor">
+            <div>
+                <div>
+                   <a href="#"><img src="./img/g_pic5.jpg" alt="" class="small_ph"/></a>
+                   <div>
+                       <h4>2019.6.1</h4>
+                       <p>06月第01季客片</p>
+                   </div>
+                </div>
+                <div>
+                   <a href="#"><img src="./img/g_pic6.jpg" alt="" class="small_ph"/></a>
+                   <div>
+                       <h4>2019.5.30</h4>
+                       <p>05月第04季客片</p>
+                   </div> 
+                </div>
+                <div>
+                    <a href="#"><img src="./img/g_pic7.jpg" alt="" class="small_ph"/></a>
                     <div>
-                        <ul class="list-unstyled d-flex p-0 m-0">
-                            <li>
-                                <a href="http://video.mnls.com/xk.mp4 ">
-                                    <img src="http://img.mnlsbj.com/2018/1106/20181106054122223.jpg" alt="">
-                                    <!--<div class="post-mask">-->
-                                        <!--<img class="post-icon" src="./img/g_video_bg1.jpg">-->
-                                    <!--</div>-->
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://video.mnls.com/changjing1.mp4">
-                                    <img src="http://img.mnlsbj.com/2018/1106/20181106042602809.jpg" alt="">
-                                    <!--<div class="post-mask">-->
-                                        <!--<img class="post-icon" src="./img/g_video_bg2.jpg">-->
-                                    <!--</div>-->
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://video.mnls.com/huaxu.mp4">
-                                    <img src="http://img.mnlsbj.com/2018/1106/20181106042630994.jpg" alt="">
-                                    <!--<div class="post-mask">-->
-                                        <!--<img class="post-icon" src="./img/g_video_bg3.jpg">-->
-                                    <!--</div>-->
-                                </a>
-                            </li>
-                            <li>
-                                <!--<a>-->
-                                    <!--<img src="http://img.mnlsbj.com/2018/1106/20181106054323189.jpg" alt="">-->
-                                    <!--<div class="post-mask">-->
-                                        <!--<img class="post-icon" src="./img/g_video.jpg">-->
-                                    <!--</div>-->
-                                <!--</a>-->
-                            </li>
-
-                        </ul>
+                        <h4>2019.5.28</h4>
+                        <p>05月第03季客片</p>
                     </div>
-                    <div class="bx-controls"></div>
                 </div>
-                <div class="video-prev"><a class="" href=""></a></div>
-                <div class="video-next"><a class="" href=""></a></div>
+                <div>
+                    <a href="#"><img src="./img/g_pic8.jpg" alt="" class="small_ph"/></a>
+                    <div>
+                        <h4>2019.5.2</h4>
+                        <p>05月第02季客片</p>
+                    </div>  
+                </div>
             </div>
-
+            <div>
+                <div>
+                  <a href="#"><img src="./img/g_pic9.jpg" alt="" class="small_ph"/></a>
+                  <div>
+                      <h4>2019.4.18</h4>
+                      <p>04月第04季客片</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="#"><img src="./img/g_pic10.jpg" alt="" class="small_ph"/></a>
+                  <div>
+                      <h4>2019.4.16</h4>
+                      <p>04月第03季客片</p>
+                  </div>
+                </div>
+                <div>
+                    <a href="#"><img src="./img/g_pic11.jpg" alt="" class="small_ph"/></a>
+                    <div>
+                        <h4>2019.4.06</h4>
+                        <p>04月第01季客片</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><img src="./img/g_pic12.jpg" alt="" class="small_ph"/></a>
+                    <div>
+                        <h4>2019.4.02</h4>
+                        <p>04月第02季</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 楼层过渡-->
+        <div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran1.png" alt=""/>
+            </div>
+            <div class="second" align="center">
+                <span>DEMO FILM</span>
+                <span>拍摄影像</span>
+            </div>
+            <div class="text-center p-4">
+                <img src="./img/g_tran4.png" alt=""/>
+            </div>
+        </div>
+        <!-- 三楼视频-->
+        <div id="video-player" class="video-play floor">
+            <!-- 上层视频 -->
+            <div class="video_top">
+               <div class="big_video">
+                   <div class="play" onclick="javascript:play1()">
+                       <img src="./img/g_play.png" alt="" class="img_play">
+                   </div>
+                   <div class="v_ph v_ph1">
+                       <img src="img/video2.jpg" alt="" class="img2">
+                   </div>
+                   <video src="video/g_vid1.mp4" class="video"></video>
+               </div>
+           </div>
+           <!-- 下层视频 -->
+           <div class="three_v">
+               <!-- 视频一 -->
+               <div>
+                    <div class="play2 play2_1" onclick="javascript:play2();">
+                       <img src="./img/g_play.png" alt="" class="img_play2 img2_1">
+                    </div>
+                    <div class="v_ph v_ph2">
+                       <img src="img/video2.jpg" alt="" class="img3">
+                   </div>
+                   <video src="video/w_two.mp4" class="small_video1"></video>
+               </div>
+               <!-- 视频二 -->
+               <div>
+                  <div class="play2 play2_2" onclick="play3();">
+                       <img src="./img/g_play.png" alt="" class="img_play2 img2_2">
+                   </div>
+                   <div class="v_ph v_ph2">
+                       <img src="img/video2.jpg" alt="" class="img4">
+                   </div>
+                   <video src="video/g_vid2.mp4" class="small_video2"></video>
+               </div>
+               <!-- 视频三 -->
+               <div >
+                  <div class="play2 play2_3"  onclick="play4();">
+                       <img src="./img/g_play.png" alt="" class="img_play2 img2_3">
+                   </div>
+                   <div class="v_ph v_ph2">
+                       <img src="img/video2.jpg" alt="" class="img5">
+                   </div>
+                   <video src="video/g_vid3.mp4"  class="small_video3"></video>
+               </div>
+           </div>
+        </div>
+        <script>
+        </script>
+        <!-- 视频和承诺之间的过渡性 -->
+        <div class="our">
+         <div></div>
+         <div></div>
+        </div>
+        <!-- 用户承诺 -->
+        <div class="promise">
+            <div>
+                <div class="product"> 
+                  <div class="p_ph">
+                      <img src="img/mes.png" alt="">
+                    </div>
+                  <div class="p_word">
+                      <p class="p1"><b>品牌介绍</b></p>
+                      <p class="p2">关于本色,我们想为您拍一张这样的照片<br/>
+                      ABOUT THE TRUE,WE'D LIKE TO TAKE A <br/>
+                      PICTURE LIKE THIS FOR YOU.<br/></p>
+                  </div>
+                </div>
+                <div class="pro">
+                   <div class="p_ph">
+                       <img src="img/q2.png" alt="">
+                   </div>
+                   <div class="p_word">
+                       <p class="p1"><b>五大承诺</b></p>
+                       <p class="p2">七星级服务标准,开启全"心"影像时代<br/>
+                       SEVEN - STAR ,OPEN THE WHOLE "HEART" <br/>
+                       IMAGE ERA.<br/></p>
+                   </div>
+                </div>
+            </div>
+            <div>
+                <div class="sculpt">
+                   <div class="p_ph">
+                       <img src="img/q2.png" alt="">
+                   </div>
+                   <div class="p_word">
+                       <p class="p1"><b>化妆品造型介绍</b></p>
+                       <p class="p2">国际一线彩妆<br/>
+                       INTERNATIONAL FIRST LINE MAKE-UP<br/></p>
+                   </div>
+                </div>
+                <div class="home">
+                    <div class="p_ph">
+                        <img src="img/q2.png" alt="">
+                    </div>
+                    <div class="p_word">
+                        <p class="p1"><b>独家基地介绍</b></p>
+                        <p class="p2">独家拍摄基地<br/>
+                        EXCLUSIVE SHOOTING BASE<br/></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="tq">
+                   <div class="p_ph">
+                       <img src="img/q3.png" alt="">
+                   </div>
+                   <div class="p_word">
+                       <p class="p1"><b>尊享特权</b></p>
+                       <p class="p2">轻松来本色拍照，一键抢订，一次搞定<br/>
+                       EASY TO TAKE A PICTURE OF THE TRUE, A KEY TO <br/>
+                       GRAB, A HIGH.<br/></p>
+                   </div>
+                </div>
+                <div class="pay">
+                    <div class="p_ph">
+                        <img src="img/q4.png" alt="">
+                    </div>
+                    <div class="p_word">
+                        <p class="p1"><b>汇款方式</b></p>
+                        <p class="p2">网络支付，省时、省力、省心<br/>
+                        NETWORK PAYMENT, SAVE TIME, EFFORT, SAVE THE
+                         HEART.<br/></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 地图 -->
+        <div id="map">
+            <img src="img/map-blue.gif" alt="">
+            <div id="city">
+                <div class="london">
+                    <div>
+                       <div>伦敦</div>
+                       <img src="img/map_london.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Paris">
+                    <div>            
+                        <div> 巴黎  </div>
+                        <img src="img/map_Paris.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Venice">
+                    <div>
+                        <div> 威尼斯</div>
+                        <img src="img/map_Venice.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Prague">
+                    <div>
+                        <div>布拉格</div>
+                        <img src="img/map_Bragg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Rome">
+                    <div>
+                        <div>罗马</div>
+                        <img src="img/map_Roman.jpg" alt="">
+                    </div>       
+                </div>
+                <div class="Santorini ">
+                    <div>
+                         <div>圣托里尼</div>
+                         <img src="img/map_Santorini.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="Maldives">
+                    <div>
+                        <div>马尔代夫</div>
+                        <img src="img/map_Maldives.jpg" alt="">
+                    </div>
+                </div>
+                <div class="HKT">
+                     <div>
+                        <div>普吉岛</div>
+                        <img src="img/map_HKT.jpg" alt="">
+                    </div>                   
+                 </div>
+                <div class="KUL">
+                    <div>
+                        <div>吉隆坡</div>
+                        <img src="img/map_KUL.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Bail">
+                    <div>
+                        <div>峇里岛</div>
+                        <img src="img/map_Bei.jpg" alt="">
+                    </div>
+                </div>
+                <div class="snow">
+                    <div>
+                        <img src="img/map_snow.jpg" alt="" class="snow_p">                        
+                        <div>雪梨</div>
+                    </div>
+                </div>
+                <div class="kili">
+                    <div>
+                        <div>纽西兰</div>
+                        <img src="img/map_Kili.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Dali">
+                    <div>
+                        <div>大理</div>
+                        <img src="img/map_Dali.jpg" alt="">
+                    </div>
+                </div>
+                <div class="LJG">
+                    <div>
+                        <div>丽江</div>
+                        <img src="img/map_LJG.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Sanya">
+                    <div>
+                        <div>三亚</div>
+                        <img src="img/map_Sanya.jpg" alt="">
+                    </div>                    
+                </div>
+                <div class="HK">
+                    <div>
+                        <div>香港</div>
+                        <img src="img/map_HK.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="TaiWan">
+                    <div>
+                        <div>台湾</div>
+                        <img src="img/map_Taiwan.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ShangHai">
+                    <div>
+                        <div>上海</div>
+                        <img src="img/map_shanghai.jpg" alt="">
+                    </div>                   
+                </div>
+                <div class="Qing">
+                    <div>
+                        <div>青岛</div>
+                        <img src="img/map_Qing.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Mei">
+                    <div>
+                        <div>湄洲岛</div>
+                        <img src="img/map_Mei.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="Chong">
+                    <div>
+                        <div>冲绳</div>
+                        <img src="img/map_Chong.jpg" alt="">
+                    </div>
+                 </div>
+                <div class="Bei">
+                    <div>
+                        <div>北海道</div>
+                        <img src="img/map_Bei.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        var video=document.querySelector(".video-play");
-        var v3=document.getElementById("v3");
-        var img=document.getElementById("big");
-        video.onclick=function() {
-//            e.preventDefault();
-            if(v3.paused){
-                v3.play();
-                img.src="./img/g_stop.png";
-            }else{
-                v3.pause();
-                img.src="./img/g_play.png";
-            }
-        }
-        video.onmouseenter=function(){
-            img.style.display="block";
-        };
-        video.onmouseleave=function(){
-            img.style.display="none";
-        };
-    </script>
-
+    <!-- 尾部 -->
+    <div id="footer"></div>
 </div>
+<script>
+  $(function() {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+    })
+</script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+	<div>
+		用户名称：<input type="text" id="uname">
+	</div>
+	<div>
+		用户密码：<input type="password" id="upwd">
+	</div>
+	<button onclick="login()">登陆</button>
+	<script>
+		function login(){
+			//1.创建xhr
+			var xhr=new XMLHttpRequest();
+			//4.绑定监听
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4&&xhr.status==200){
+					var result=xhr.responseText;
+					console.log(result);
+				}
+			}
+			//2.创建请求
+			xhr.open("post","/user/login",true);
+			//3.发送请求
+			//修改请求头
+			xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+			var formdata="uname="+uname.value+"&upwd="+upwd.value;
+			xhr.send(formdata);
+		}
+	</script>
+ </body>
+</html>

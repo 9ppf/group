@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!-- 导入3个js,有顺序要求-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/yanzheng.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <!-- 存在问题：有先后问题 -->
+        <!-- 首页视频-->
+        <video src="video/index.mp4" loop autoplay muted></video>
+        <!-- 中间遮罩层-->
+        <div class="zhezhao"></div>
+        <!-- 用户-->
+        <div class="user">
+            <div class="show">
+                <!-- 注册,还差短信验证-->
+                <div class="reg">
+                        <div class="logo"></div>
+                        <div>
+                            <input type="text" placeholder="手机号码" class="phone2"/>
+                            <div class="mes">
+                                <div class="cut"></div>
+                                <div>获取短信验证码</div>       
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="密码"  class="upwd2"/>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="验证码" id="reg">
+                        </div>
+                        <div>
+                            <button class="btn" onclick="javascript:reg_reg();">注册</button>
+                        </div>
+                        <div class="font">
+                            <span>已经同意《用户协议》</span>
+                            <span onclick="javascript:newLogin()">去登陆</span>
+                        </div>
+                        <img src="./img/eye.png" alt="" class="eye"/>
+                        <div id="jingshi2">
+                            <div id="tishi2"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
